@@ -61,24 +61,9 @@ async def startHandler(bot:Update, msg:Message):
     await msg.reply_text(
         "<b>Hi, I am Remi Ayasaki.\nIf you haven't joined the Channel then click on 【V๏ɪ፝֟𝔡】 ✧Network✧ now.\n\nHow to Use me?</b>\n\t0. Join The 【V๏ɪ፝֟𝔡】 ✧Network✧ Channel First \n\t1. Add me to your Group & CHannel.\n\t2. Make me admin in both Channel & Group.\n\t3. Give permission to Post , Edit & Delete Messages.\n\t4. Now send Group ID & Channel ID in this format <code>/add GroupID ChannelID</code>.\nNow Bot is ready to be used.\n\n<b> 😊First Join 【V๏ɪ፝֟𝔡】 ✧Network✧ [ @VoidXNetwork ] To Use Me \n\n<b> Dm @Itadori_Hanako For Any Queries.</b>",
         parse_mode = "html",
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "➕Add me to your Group.",
-                        url = f"https://telegram.me/{botInfo.username}?startgroup=true"
-                    )
-                ]
-            ]
-        )
-    )
-    return
-                   InlineKeyboardButton(
-                        "Join 【V๏ɪ፝֟𝔡】 ✧Network✧",
-                        url = f"https://telegram.me/voidxnetwork"
-                    )
-                ]
-            ]
+        reply_markup = InlineKeyboardMarkup([[
+            InlineKeyboardButton("➕Add me to your Group.",url = f"https://telegram.me/{botInfo.username}?startgroup=true")],
+           [InlineKeyboardButton("Join 【V๏ɪ፝֟𝔡】 ✧Network✧",url = f"https://telegram.me/voidxnetwork")],]
         )
     )
     return
