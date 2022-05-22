@@ -399,7 +399,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} {groupResult}\n👍Thanks for requesting!</b>"
+                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} {groupResult}\n👍Thanks for requesting! By Smart Remi </b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
@@ -409,7 +409,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
     return
 
 
-"""Bot is Started"""
-print("Bot has been Started!!!")
+"""Bot Started"""
+print("Bot Started Now Gib Parmty!!!")
 app.run()
 
