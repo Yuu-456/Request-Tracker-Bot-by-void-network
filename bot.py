@@ -84,7 +84,7 @@ async def forwardedHandler(bot:Update, msg:Message):
     forwardInfo = msg.forward_from_chat
     if forwardInfo.type == "channel":   # If message forwarded from channel
         await msg.reply_text(
-            f"<b>Hey😁, Your Channel ID is <code>{forwardInfo.id}</code>\n\n Well on this case of your succession i want to introduce you to one of /n/n【V๏ɪ፝֟𝔡】 ✧Network✧'s Group Management Bot /n/n Meet - @HoriXProBot \n\nA Modular Management Robot For Your Groups . \nWith Our !00% Support At @KyoukoXsupport \n+ \nIs Completly Updated In @hori_x_updates.</b>",
+            f"<b>Hey😁, Your Channel ID is <code>{forwardInfo.id}</code>\n\n Well on this case of your succession i want to introduce you to one of /n/n【V๏ɪ፝֟𝔡】 .</b>",
             parse_mode = "html"
         )
     return
@@ -171,7 +171,7 @@ async def groupChannelIDHandler(bot:Update, msg:Message):
                                     }
                                 )
                                 await msg.reply_text(
-                                    "<b>Your Group and Channel has now been added SuccessFully🥳.\n\n Well on this case of your succession i want to introduce you to one of /n/n【V๏ɪ፝֟𝔡】 ✧Network✧'s Group Management Bot /n/n Meet - @HoriXProBot /n/t A Modular Management Robot For Your Groups . With Our !00% Support At @KyoukoXsupport + Is Completly Updated In @hori_x_updates.</b>",
+                                    "<b>Your Group and Channel has now been added SuccessFully🥳.\n\n Well on this case of your succession i want to introduce you to one of \n\n【V๏ɪ፝֟𝔡】 ✧Network✧'s Group Management Bot /n/n Meet - @HoriXProBot /n/t A Modular Management Robot For Your Groups . With Our !00% Support At @KyoukoXsupport + Is Completly Updated In @hori_x_updates.</b>",
                                     parse_mode = "html"
                                 )
     else:   # If command is invalid
