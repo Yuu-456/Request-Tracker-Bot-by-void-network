@@ -81,7 +81,7 @@ async def startHandler(bot:Update, msg:Message):
             ]
         )
     )
-    
+    return
 
 # return group id when bot is added to group
 @app.on_message(filters.new_chat_members)
